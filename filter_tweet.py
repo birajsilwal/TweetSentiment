@@ -1,14 +1,14 @@
 import re
 
+
 '''
 this class filters (removes tweet tags, punctuations,
 irrelevant words such as a, an, the) from the tweets
 and returns array of clean filtered tweets
 '''
-
 class FilterTweets:
     # opening the testing file
-    tweet_testing = open('Tweets/noCR_test.txt')
+    tweet_testing = open('Tweets/Tweets_election_trial.txt')
     final_tweets = []
 
 
@@ -44,6 +44,7 @@ class FilterTweets:
                            " lmao | af | get | got | here | there | who |"
                            " what | am | no | why | with | us | our | bro ", " ", tweet)
             tweets1.append(tweet)
+            print(tweet)
 
 
         '''
